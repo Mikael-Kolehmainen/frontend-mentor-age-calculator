@@ -1,0 +1,23 @@
+// FONT FAMILY
+
+@font-face {
+  font-family: poppins;
+  src: url(/src/public_site/font/Poppins-Regular.ttf);
+}
+$main-font: poppins;
+
+// FONT COLORS
+
+$font-primary-color: hsl(0, 0%, 8%);
+$font-secondary-color: hsl(0, 1%, 44%);
+
+// FONT SIZES
+
+$input-font-size: 32px;
+
+// MAIN COLORS
+
+$primary-color: hsl(259, 100%, 65%);
+$secondary-color: hsl(0, 100%, 67%);
+$background-color: hsl(0, 0%, 100%);
+$secondary-background-color: hsl(0, 0%, 86%);
