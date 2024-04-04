@@ -27,11 +27,12 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: $main-font;
+  font-family: $bold-font;
 }
 html, body {
   height: 100%;
-  background-color: $background-color;
-  color: $font-primary-color;
+  background-color: $secondary-background-color;
+  color: $font-secondary-color;
+  letter-spacing: 1.5px;
   overflow: auto;
 }

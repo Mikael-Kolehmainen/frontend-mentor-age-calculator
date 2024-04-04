@@ -1,0 +1,26 @@
+article {
+  margin: auto;
+  width: 540px;
+  padding: 30px;
+  background-color: $background-color;
+  border-radius: 20px 20px 100px 20px;
+  box-shadow: 0px 0px 2px 1px $shadow-color;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.age-input {
+  label {
+    display: block;
+    font-size: 10px;
+  }
+
+  input {
+    font-size: $input-font-size;
+    width: 100px;
+    border-radius: 5px;
+  }
+}

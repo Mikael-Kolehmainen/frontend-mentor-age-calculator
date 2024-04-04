@@ -4,7 +4,17 @@
   font-family: poppins;
   src: url(/src/public_site/font/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: poppins-bold;
+  src: url(/src/public_site/font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-extra-bold;
+  src: url(/src/public_site/font/Poppins-ExtraBold.ttf);
+}
 $main-font: poppins;
+$bold-font: poppins-bold;
+$extra-bold-font: poppins-extra-bold;
 
 // FONT COLORS
 
@@ -13,11 +23,12 @@ $font-secondary-color: hsl(0, 1%, 44%);
 
 // FONT SIZES
 
-$input-font-size: 32px;
+$input-font-size: 24px;
 
 // MAIN COLORS
 
 $primary-color: hsl(259, 100%, 65%);
 $secondary-color: hsl(0, 100%, 67%);
 $background-color: hsl(0, 0%, 100%);
-$secondary-background-color: hsl(0, 0%, 86%);
+$secondary-background-color: hsl(0, 0%, 94%);
+$shadow-color: hsla(0, 1%, 44%, 0.1);

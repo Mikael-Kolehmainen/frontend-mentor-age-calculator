@@ -2,6 +2,35 @@
   font-family: poppins;
   src: url(/src/public_site/font/Poppins-Regular.ttf); }
 
+@font-face {
+  font-family: poppins-bold;
+  src: url(/src/public_site/font/Poppins-Bold.ttf); }
+
+@font-face {
+  font-family: poppins-extra-bold;
+  src: url(/src/public_site/font/Poppins-ExtraBold.ttf); }
+
+article {
+  margin: auto;
+  width: 540px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px 20px 100px 20px;
+  box-shadow: 0px 0px 2px 1px rgba(113, 111, 111, 0.1); }
+
+form {
+  display: flex;
+  gap: 20px; }
+
+.age-input label {
+  display: block;
+  font-size: 10px; }
+
+.age-input input {
+  font-size: 24px;
+  width: 100px;
+  border-radius: 5px; }
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px; }
@@ -22,12 +51,13 @@
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  font-family: poppins; }
+  font-family: poppins-bold; }
 
 html, body {
   height: 100%;
-  background-color: white;
-  color: #141414;
+  background-color: #f0f0f0;
+  color: #716f6f;
+  letter-spacing: 1.5px;
   overflow: auto; }
 
 a i {
