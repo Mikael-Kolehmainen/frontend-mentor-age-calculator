@@ -28,12 +28,16 @@ form {
     display: block;
     font-size: 10px;
     margin-bottom: 5px;
+
+    &.error {
+      color: $secondary-color;
+    }
   }
 
   input {
     font-size: $input-font-size;
     font-family: $bold-font;
-    width: 80px;
+    width: 85px;
     padding: 7.5px 5px 7.5px 15px;
     border-radius: 5px;
     border: 1.5px solid $shadow-color;
@@ -54,6 +58,18 @@ form {
       outline: none;
       border: 1.5px solid $primary-color;
     }
+    &.error {
+      border: 1.5px solid $secondary-color;
+    }
+  }
+
+  .error-label {
+    font-size: 9px;
+    font-family: $main-font;
+    font-style: italic;
+    letter-spacing: 0.4px;
+    margin: 10px 0 0 2px;
+    color: $secondary-color;
   }
 }
 
@@ -80,7 +96,8 @@ form {
       height: 50%;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $font-primary-color;
       cursor: pointer;
     }

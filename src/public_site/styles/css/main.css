@@ -36,11 +36,13 @@ form {
   display: block;
   font-size: 10px;
   margin-bottom: 5px; }
+  .age-input label.error {
+    color: #ff5757; }
 
 .age-input input {
   font-size: 22px;
   font-family: poppins-bold;
-  width: 80px;
+  width: 85px;
   padding: 7.5px 5px 7.5px 15px;
   border-radius: 5px;
   border: 1.5px solid rgba(113, 111, 111, 0.1);
@@ -55,6 +57,16 @@ form {
   .age-input input:focus {
     outline: none;
     border: 1.5px solid #854dff; }
+  .age-input input.error {
+    border: 1.5px solid #ff5757; }
+
+.age-input .error-label {
+  font-size: 9px;
+  font-family: poppins;
+  font-style: italic;
+  letter-spacing: 0.4px;
+  margin: 10px 0 0 2px;
+  color: #ff5757; }
 
 .submit {
   display: flex;
@@ -73,7 +85,7 @@ form {
     .submit .submit-btn i {
       width: 50%;
       height: 50%; }
-    .submit .submit-btn:hover {
+    .submit .submit-btn:hover, .submit .submit-btn:focus {
       background-color: #141414;
       cursor: pointer; }
 
