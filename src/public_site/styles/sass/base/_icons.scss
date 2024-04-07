@@ -1,10 +1,14 @@
-a {
+a, div {
   i {
     width: 50%;
     height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-    &.fa-example {
-      background: url('/src/public_site/media/icons/.svg') no-repeat center;
+    &.arrow {
+      background: url('/src/public_site/media/icons/icon-arrow.svg') no-repeat center;
     }
   }
 }

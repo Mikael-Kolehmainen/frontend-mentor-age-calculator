@@ -23,10 +23,12 @@ class HomeController
               <input type='number' placeholder='YYYY'></type>
             </div>
           </form>
-          <div class='style-line'></div>
-          <a class='submit-btn'>
-            <i class='arrow' />
-          </a>
+          <div class='submit'>
+            <div class='style-line'></div>
+            <div class='submit-btn'>
+              <i class='arrow'></i>
+            </div>
+          </div>
           <div class='age-result'>
             <div class='result'>
               <p id='year' class='highlight'>--</p>

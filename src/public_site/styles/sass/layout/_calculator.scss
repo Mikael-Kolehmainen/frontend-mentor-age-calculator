@@ -1,10 +1,21 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 article {
   margin: auto;
-  width: 540px;
+  width: 480px;
+  height: fit-content;
   padding: 30px;
   background-color: $background-color;
   border-radius: 20px 20px 100px 20px;
   box-shadow: 0px 0px 2px 1px $shadow-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 form {
@@ -16,11 +27,84 @@ form {
   label {
     display: block;
     font-size: 10px;
+    margin-bottom: 5px;
   }
 
   input {
     font-size: $input-font-size;
-    width: 100px;
+    font-family: $bold-font;
+    width: 80px;
+    padding: 7.5px 5px 7.5px 15px;
     border-radius: 5px;
+    border: 1.5px solid $shadow-color;
+    appearance: textfield;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 1.5px solid $primary-color;
+    }
+    &:focus {
+      outline: none;
+      border: 1.5px solid $primary-color;
+    }
+  }
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+
+  .style-line {
+    height: 2px;
+    background-color: $shadow-color;
+    flex: 1;
+  }
+
+  .submit-btn {
+    border-radius: 50%;
+    background-color: $primary-color;
+    width: 65px;
+    height: 65px;
+    position: relative;
+    margin-left: auto;
+
+    i {
+      width: 50%;
+      height: 50%;
+    }
+
+    &:hover {
+      background-color: $font-primary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.age-result {
+  display: flex;
+  flex-direction: column;
+
+  .result {
+    display: flex;
+
+    p {
+      color: $font-primary-color;
+      font-size: 60px;
+      font-family: $extra-bold-font;
+      font-style: italic;
+      line-height: 1.2;
+
+      &.highlight {
+        color: $primary-color;
+        letter-spacing: 8px;
+      }
+    }
   }
 }

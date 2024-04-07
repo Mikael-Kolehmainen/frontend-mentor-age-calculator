@@ -10,13 +10,23 @@
   font-family: poppins-extra-bold;
   src: url(/src/public_site/font/Poppins-ExtraBold.ttf); }
 
+section {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
 article {
   margin: auto;
-  width: 540px;
+  width: 480px;
+  height: fit-content;
   padding: 30px;
   background-color: white;
   border-radius: 20px 20px 100px 20px;
-  box-shadow: 0px 0px 2px 1px rgba(113, 111, 111, 0.1); }
+  box-shadow: 0px 0px 2px 1px rgba(113, 111, 111, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 form {
   display: flex;
@@ -24,12 +34,63 @@ form {
 
 .age-input label {
   display: block;
-  font-size: 10px; }
+  font-size: 10px;
+  margin-bottom: 5px; }
 
 .age-input input {
-  font-size: 24px;
-  width: 100px;
-  border-radius: 5px; }
+  font-size: 22px;
+  font-family: poppins-bold;
+  width: 80px;
+  padding: 7.5px 5px 7.5px 15px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(113, 111, 111, 0.1);
+  appearance: textfield;
+  -moz-appearance: textfield; }
+  .age-input input::-webkit-outer-spin-button, .age-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .age-input input:hover {
+    cursor: pointer;
+    border: 1.5px solid #854dff; }
+  .age-input input:focus {
+    outline: none;
+    border: 1.5px solid #854dff; }
+
+.submit {
+  display: flex;
+  align-items: center; }
+  .submit .style-line {
+    height: 2px;
+    background-color: rgba(113, 111, 111, 0.1);
+    flex: 1; }
+  .submit .submit-btn {
+    border-radius: 50%;
+    background-color: #854dff;
+    width: 65px;
+    height: 65px;
+    position: relative;
+    margin-left: auto; }
+    .submit .submit-btn i {
+      width: 50%;
+      height: 50%; }
+    .submit .submit-btn:hover {
+      background-color: #141414;
+      cursor: pointer; }
+
+.age-result {
+  display: flex;
+  flex-direction: column; }
+  .age-result .result {
+    display: flex; }
+    .age-result .result p {
+      color: #141414;
+      font-size: 60px;
+      font-family: poppins-extra-bold;
+      font-style: italic;
+      line-height: 1.2; }
+      .age-result .result p.highlight {
+        color: #854dff;
+        letter-spacing: 8px; }
 
 /* width */
 ::-webkit-scrollbar {
@@ -60,8 +121,12 @@ html, body {
   letter-spacing: 1.5px;
   overflow: auto; }
 
-a i {
+a i, div i {
   width: 50%;
-  height: 50%; }
-  a i.fa-example {
-    background: url("/src/public_site/media/icons/.svg") no-repeat center; }
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  a i.arrow, div i.arrow {
+    background: url("/src/public_site/media/icons/icon-arrow.svg") no-repeat center; }
