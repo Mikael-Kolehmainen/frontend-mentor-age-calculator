@@ -104,6 +104,28 @@ form {
         color: #854dff;
         letter-spacing: 8px; }
 
+@media (max-width: 600px) {
+  article {
+    width: 80%;
+    padding: 40px 20px; }
+  form {
+    gap: 15px; }
+  .age-input label {
+    font-size: 12px; }
+  .age-input input {
+    width: 65px;
+    font-size: 20px; }
+  .submit {
+    position: relative;
+    height: 100px; }
+    .submit .submit-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .age-result .result p {
+    font-size: 54px; } }
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px; }
