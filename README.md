@@ -1,5 +1,5 @@
-<h1>Basic-Project-Structure</h1>
-<p>git clone -b branch remote_repo</p>
+<h1>frontend-mentor-age-calculator</h1>
+<!-- <p>git clone -b branch remote_repo</p>
 <h2>About</h2>
 <p style='font-size: 16px; text-align: justify; text-justify: inter-word;'>
   This is my foundation for all my PHP web projects. I use REST & OOP principles.
@@ -21,6 +21,6 @@
   <li>Sass 8.0.0</li>
 </ul>
 <h2>Project Libraries</h2>
-<ul style='font-size: 16px;'>
+<ul style='font-size: 16px;'> -->
 
-</ul>
+<!-- </ul> -->
